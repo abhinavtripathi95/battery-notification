@@ -12,7 +12,6 @@ then
     then
         /usr/bin/notify-send "Battery critical" "Shutting down in 30 seconds" -i /home/abhinav/Documents/battery-scripts/alert.ico
         sleep 30
-        # sudo chmod u+s /sbin/shutdown
         /sbin/shutdown -h now
 
     elif [ $battery_level -le 20 ]
