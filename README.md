@@ -44,7 +44,7 @@ $ crontab -e
 # For more information see the manual pages of crontab(5) and cron(8)
 # 
 # m h  dom mon dow   command
-* * * * * sh /home/abhinav/Documents/battery-scripts/notify-me.sh
+* * * * * sh /home/abhinav/Downloads/battery-notification/notify-me.sh
 ```
 Add the last line. Make sure that you write the absolute path.
 
