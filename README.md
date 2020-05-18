@@ -1,5 +1,12 @@
 # Custom Battery Notifications in Ubuntu 16.04
-Display battery related notifications with `notify-send` in Ubuntu 16.04 with crontab
+Display battery related notifications with `notify-send` in Ubuntu 16.04 with crontab  
+
+### While Discharging
+![notification-low](imgs/low.png)
+![notification-very-low](imgs/very-low.png)
+![notification-alert](imgs/alert.png)
+### While Charging
+![notification-full](imgs/full.png)
 
 ## Features
 While discharging following notifications are issued:
