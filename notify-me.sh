@@ -10,23 +10,23 @@ then
 
     if [ $battery_level -le 15 ] 
     then
-        /usr/bin/notify-send "Battery critical" "Shutting down in 30 seconds" -i /home/abhinav/Documents/battery-scripts/alert.ico
+        /usr/bin/notify-send "Battery critical" "Shutting down in 30 seconds" -i /home/abhinav/Downloads/battery-notification/icons/alert.ico
         sleep 30
         /sbin/shutdown -h now
 
     elif [ $battery_level -le 20 ]
     then
-        /usr/bin/notify-send "Battery very low" "Battery level is ${battery_level}%!" -i /home/abhinav/Documents/battery-scripts/battery-critical.ico
+        /usr/bin/notify-send "Battery very low" "Battery level is ${battery_level}%!" -i /home/abhinav/Downloads/battery-notification/icons/battery-very-low.ico
 
     elif [ $battery_level -le 30 ]
     then 
-        /usr/bin/notify-send "Battery low" "Battery level is ${battery_level}%!" -i /home/abhinav/Documents/battery-scripts/battery-low.ico
+        /usr/bin/notify-send "Battery low" "Battery level is ${battery_level}%!" -i /home/abhinav/Downloads/battery-notification/icons/battery-low.ico
     
     fi
 
 else
     if [ $battery_level -gt 92 ]
     then
-        /usr/bin/notify-send "Battery is charging" "Battery level is ${battery_level}%!" -i /home/abhinav/Documents/battery-scripts/battery-full.ico
+        /usr/bin/notify-send "Battery is charging" "Battery level is ${battery_level}%!" -i /home/abhinav/Downloads/battery-notification/icons/battery-full.ico
     fi
 fi
